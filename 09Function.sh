@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VALIDATE() {
+VALIDATE(){
     if [ $1 -ne 0 ]
     then
      echo "ERROR:: $2... is failed"
@@ -8,7 +8,7 @@ VALIDATE() {
     else
      echo "$1... is success"
     fi
- }
+}
 
 
 
