@@ -9,16 +9,13 @@ VALIDATE(){
      echo "$1... is success"
     fi
 }
-
-
-
 if [ $ID -ne 0 ]
 then
- echo "ERROR::please run script with root access"
+ echo "ERROR: Please run scripit witn root acces"
  exit 1
 else
- echo "your  root user"
-fi 
+ echo "your rooot user"
+fi
 
 
 yum install mysql -y
