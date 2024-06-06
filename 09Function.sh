@@ -3,7 +3,7 @@
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-     echo "ERROR : $2... is failed"
+     echo "ERROR:: $2... is failed"
      exit 1
     else
      echo "$1... is success"
@@ -12,7 +12,7 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then
- echo "ERROR: please run script with root access"
+ echo "ERROR::please run script with root access"
  exit 1
 else
  echo "your  root user"
