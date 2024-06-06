@@ -19,13 +19,13 @@ VALIDATE(){
     fi
 }
 
-if [ $ID ne 0 ]
-then 
-  echo -e $R ERROR:: Please run this script with root access $N 
-  exit 1
-else
-  echo -e "You are root user"
-fi
+    if [ $ID ne 0 ]
+    then 
+        echo -e $R ERROR:: Please run this script with root access $N 
+        exit 1
+    else
+        echo -e "You are root user"
+    fi
 
 yum install mysql &>>$LOGFILE
 
