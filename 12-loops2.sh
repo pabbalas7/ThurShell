@@ -19,7 +19,6 @@ VALIDATE(){
         echo -e "$2 .. $G  success $N "
     fi
 }
-
 if [ $ID -ne 0 ]
 then 
   echo -e $R ERROR:: Please run this script with root access $N 
@@ -27,7 +26,6 @@ then
 else
   echo -e "You are root user"
 fi
-
 for package in $@
 do
     yum list installed $package &>> $LOGFILE #check installed or not
