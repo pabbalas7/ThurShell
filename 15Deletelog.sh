@@ -12,10 +12,10 @@ then
     echo -e " $R Sourcedirectory : $Sourcefile is not Ava $N
 fi
 
-Files-to-delete=$(find $Sourcefile -type f -mtime +14 -name "*.log")
+Files_to_delete=$(find $Sourcefile -type f -mtime +14 -name "*.log")
 
 while IFS= read -r line
 do
  echo "Deleting file:$line
  rm-rf $line
-done <<< $Files-to-delete
+done <<< $Files_to_delete
